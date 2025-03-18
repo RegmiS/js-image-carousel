@@ -9,11 +9,31 @@
 </head>
 <body>
     <div class="container">
-        <button class="imbt"> < </button>
-        <div class="image-container">
+        <button class="imbt" onclick="moveSlide(-1)"> < </button>
 
+        <div class="image-container">
+            <img src="./images/img_lights_wide.jpg">
         </div>
-        <button class="imbt"> > </button>
+        
+        <div class="image-container">
+            <img src="./images/img_mountains_wide.jpg">
+        </div>
+
+        <div class="image-container">
+            <img src="./images/img_nature_wide.jpg">
+        </div>
+
+        <div class="image-container">
+            <img src="./images/img_snow_wide.jpg">
+        </div>
+
+        <button class="imbt" onclick="moveSlide(1)"> > </button>
+    </div>
+    <div>
+        <a class="dot" onclick="constMoveToSlide(0)">◉</a>
+        <a class="dot" onclick="constMoveToSlide(1)">○</a>
+        <a class="dot" onclick="constMoveToSlide(2)">○</a>
+        <a class="dot" onclick="constMoveToSlide(3)">○</a>
     </div>
 </body>
 </html>

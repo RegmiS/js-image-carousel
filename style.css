@@ -2,8 +2,9 @@
     width: 500px;
     height: 250px;
     background-color: aquamarine;
-    display: flex;
     align-items: center;
+    position: relative;
+    display: flex;
 }
 
 .imbt {
@@ -12,6 +13,21 @@
     opacity: 30%;
 }
 
-.image-container {
-    width: 100%;
+img {
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+    /* flex: 1 1 auto; */
+}
+
+.hidden {
+    display: none;
+}
+
+.active {
+    visibility: visible;
+}
+
+.dot {
+    cursor: pointer;
 }
